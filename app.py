@@ -1,7 +1,6 @@
 from flask import Flask,render_template,request
 import  pickle
 import numpy as np
-import pandas
 
 app = Flask(__name__)
 
@@ -42,7 +41,7 @@ def recommend():
     return render_template('recommend.html',data=data)
 
 if __name__ == '__main__':
-    app.run(debug=True,port=5000)
+    app.run(debug=True)
 
 
 
