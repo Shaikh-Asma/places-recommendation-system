@@ -16,25 +16,25 @@
         <ul class="nav  navbar-nav">
             <li><h1><a class="col-md-3" href="/">Home</a></h1></li>
             <li><h1><a class="col-md-3" href="/recommend">Recommend</a></h1></li>
-            <li><h1><a class="col-md-3" href="https://github.com/Shaikh-Asma/places-recommendation-system">
+         <li><h1><a class="col-md-3" href="https://github.com/Shaikh-Asma/places-recommendation-system">
             <i class="fa fa-github"></i></a></h1></li>
             </a>
         </ul>
     </nav>
-    
+
 <head>
       <link rel="stylesheet" href="{{ url_for('static', filename='css/frontpage.css') }}" />
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
     <body>
-        <p> Asma Shaikh's Recommendation System </p>
+      <h2> Asma Shaikh's Recommendation System</h2>
       <div id="videoBC" >
         <video id="videoBG" poster="{{ url_for('static', filename='poster.JPG') }}" autoplay muted loop >
           <source src="{{ url_for('static', filename='add-a-subheading_GdQsiugF.mp4') }}" type="video/mp4">
 
         </video>
       </div>
-
+</body>
 </head>
 <style>
     .text-black{
@@ -54,6 +54,6 @@
     </div>
    {% endfor %}
 
-</head>
+
 </body>
 </html>
